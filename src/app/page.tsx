@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Work from "@/components/Work";
+import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Skills />
       <Work />
+      <Testimonials />
       <Contact />
       <WhatsAppWidget />
     </main>

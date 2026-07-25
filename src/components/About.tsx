@@ -4,7 +4,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-[0.9fr_1.1fr] gap-16 items-center">
         <div className="flex flex-col items-start">
           <span className="font-display text-bronze text-[5rem] sm:text-[7rem] md:text-[9rem] leading-none">
-            7+
+            1+
           </span>
           <p className="font-body text-bone-dim text-xs tracking-[0.3em] uppercase -mt-2">
             Years in Development
@@ -21,7 +21,7 @@ export default function About() {
             just a job.
           </p>
           <p className="font-body text-bone-dim text-base md:text-lg leading-relaxed">
-            Over seven years building across freelance client work, agency
+            Over one year building across freelance client work, agency
             projects, and independent ventures.  I bring the same standard
             to every build: clean architecture, thoughtful interfaces, and
             code that holds up under pressure. My work spans full-stack
