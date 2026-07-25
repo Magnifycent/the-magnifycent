@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const SOCIALS = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/olayinka-gbolahan-ab81b11b6" },
   { label: "Instagram", href: "https://instagram.com/themagnifycent" },
@@ -40,9 +42,18 @@ export default function Contact() {
       </div>
 
       <footer className="mt-32 pt-8 border-t border-bronze-dim/10 flex flex-col md:flex-row items-center justify-between gap-4 max-w-6xl mx-auto text-center md:text-left">
-        <p className="font-body text-bone-dim text-xs tracking-[0.15em] uppercase">
-          Designed by The Magnifycent
-        </p>
+        <div className="flex items-center gap-3">
+          <Image
+            src="/images/logo.png"
+            alt="The Magnifycent logo"
+            width={24}
+            height={24}
+            className="w-6 h-6 object-contain"
+          />
+          <p className="font-body text-bone-dim text-xs tracking-[0.15em] uppercase">
+            Designed by The Magnifycent
+          </p>
+        </div>
         <p className="font-body text-bone-dim text-xs tracking-[0.15em] uppercase">
           © {new Date().getFullYear()} Gbolahan John Olayinka
         </p>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const LINKS = [
   { label: "Work", href: "#work" },
@@ -36,13 +37,21 @@ export default function Navbar() {
     >
       <nav className="max-w-6xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
         <a
-          href="#"
-          onClick={() => setMenuOpen(false)}
-          className="font-display text-bone text-sm md:text-base tracking-[0.25em] uppercase"
-        >
-          The <span className="text-bronze">Magnifycent</span>
-        </a>
-
+       href="#"
+  onClick={() => setMenuOpen(false)}
+  className="flex items-center gap-3"
+>
+  <Image
+    src="/images/logo.png"
+    alt="The Magnifycent logo"
+    width={32}
+    height={32}
+    className="w-8 h-8 object-contain"
+  />
+  <span className="font-display text-bone text-sm md:text-base tracking-[0.25em] uppercase">
+    The <span className="text-bronze">Magnifycent</span>
+  </span>
+</a>
         <ul className="hidden md:flex items-center gap-10">
           {LINKS.map((link) => (
             <li key={link.href}>
